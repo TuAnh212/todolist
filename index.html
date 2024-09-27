@@ -1,0 +1,154 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>TO DO LIST</h1>
+        <div class="content">
+            <div class="column">
+                <div class="column_header">
+                    <div class="title">
+                        <span class="count">1</span>
+                        <span class="text">TO DO</span>
+                    </div>
+                    <div class="btnNew">
+                        <button class="new">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            New task
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column_header">
+                    <div class="title">
+                        <span class="count">1</span>
+                        <span class="text">IN PROGRESS</span>
+                    </div>
+                    <div class="btnNew">
+                        <button class="new">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            New task
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column_header">
+                    <div class="title">
+                        <span class="count">1</span>
+                        <span class="text">DONE</span>
+                    </div>
+                    <div class="btnNew">
+                        <button class="new">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            New task
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all">
+        <h2>TO DO LIST</h2>
+        <div class="container">
+            <div class="column" id="todo">
+                <div class="header_column">
+                    <div class="cnt"><span class="count">1</span></div>
+                    <h3>TO DO</h3>
+                    <button id="newTaskButton">+ New Task</button>
+                </div>
+              <div class="modal">
+                <div class="modal-content">
+                  <h4>Create New Task</h4>
+                  <input type="text" id="newTaskInput" placeholder="Enter task name">
+                  <button id="createTaskButton">Save</button>
+                  <button id="closeModalButton">Cancel</button>
+                </div>
+              </div>
+              <div class="task-list"></div>
+            </div>
+            <div class="column" id="inprogress">
+                <div class="header_column">
+                    <div class="cnt"><span class="count">1</span></div>
+                    <h3>IN PROGRESS</h3>
+                    <button id="newTaskButton2">+ New Task</button>
+                </div>
+              <!-- <div class="modal">
+                <div class="modal-content">
+                  <h4>Create New Task</h4>
+                  <input type="text" id="newTaskInput" placeholder="Enter task name">
+                  <button id="createTaskButton">Save</button>
+                  <button id="closeModalButton">Cancel</button>
+                </div>
+              </div> -->
+              <div class="task-list"></div>
+            </div>
+            <div class="column" id="done">
+                <div class="header_column">
+                    <div class="cnt"><span class="count">1</span></div>
+                    <h3>DONE</h3>
+                    <button id="newTaskButton3">+ New Task</button>
+                </div>
+              <!-- <div class="modal">
+                <div class="modal-content">
+                  <h4>Create New Task</h4>
+                  <input type="text" id="newTaskInput" placeholder="Enter task name">
+                  <button id="createTaskButton">Save</button>
+                  <button id="closeModalButton">Cancel</button>
+                </div>
+              </div> -->
+              <div class="task-list"></div>
+            </div>
+          </div>
+    </div>
+  <!-- <div class="container">
+    <div class="column" id="todo">
+      <h3>TO DO</h3>
+      <div class="task-list"></div>
+    </div>
+    <div class="column" id="inprogress">
+      <h3>IN PROGRESS</h3>
+      <div class="task-list"></div>
+    </div>
+    <div class="column" id="done">
+      <h3>DONE</h3>
+      <div class="task-list"></div>
+    </div>
+  </div> -->
+
+  <!-- Modal tạo task -->
+  <!-- <div class="modal">
+    <div class="modal-content">
+      <h4>Create New Task</h4>
+      <input type="text" id="newTaskInput" placeholder="Enter task name">
+      <button id="createTaskButton">Save</button>
+      <button id="closeModalButton">Cancel</button>
+    </div>
+  </div>
+  <button id="newTaskButton">+ New Task</button> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
